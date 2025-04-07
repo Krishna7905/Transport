@@ -1,14 +1,12 @@
 /* General Reset */
 /* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #1A1A1A, #333333); /* Futuristic background */
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #00172d, #004e92);
+    color: #ffffff;
+    overflow-x: hidden;
 }
-
 /* Header Styles */
 .header-container {
     display: flex;
@@ -342,58 +340,92 @@ body {
         }
 
         /* Transportation Section */
-        .transport-section {
-            padding: 50px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
-        }
+        /* General Section Styling */
+.transport-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+    font-family: 'Poppins', sans-serif;
+}
 
-        .transport-section h2 {
-            font-size: 3rem;
-            margin-bottom: 40px;
-            color: #00ffcc;
-        }
+.transport-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #00ffcc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 10px rgba(0, 255, 204, 0.5);
+}
 
-        .transport-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+/* Transport Container Styling */
+.transport-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
 
-        .transport-box {
-            flex: 1 1 300px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+/* Individual Box Styling */
+.transport-box {
+    flex: 1 1 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
 
-        .transport-box:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-        }
+.transport-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Adds a subtle hover effect */
+}
 
-        .transport-box img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+.transport-box:hover img {
+    transform: scale(1.05); /* Zooms image slightly on hover */
+}
 
-        .transport-box h3 {
-            font-size: 1.8rem;
-            color: #00d4ff;
-        }
+.transport-box h3 {
+    font-size: 1.8rem;
+    color: #00d4ff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 212, 255, 0.5);
+    margin-bottom: 10px;
+}
 
-        .transport-box p {
-            font-size: 1.2rem;
-            color: #ffffff;
-            opacity: 0.9;
-        }
+.transport-box p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Hover Effects for Box */
+.transport-box:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 769px) {
+    .transport-container {
+        flex-wrap: nowrap;
+    }
+
+    .transport-box img {
+        height: 250px; /* Larger images for bigger screens */
+    }
+}
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
