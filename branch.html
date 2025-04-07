@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            <h1>Chhaya Trans Logistics</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="branch.html">Branches</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+    <div class="header-container">
+        <div class="info">
+            <div class="column">
+                <h4>Opening Hours</h4>
+                <p>Mon-Sat: 9 AM - 6 PM</p>
+            </div>
+            <div class="column">
+                <h4>Contact No.</h4>
+                <!-- <p>+91-9724233208</p> -->
+                <p>+91-9376944376</p>
+            </div>
+            <div class="column">
+                <h4>Email</h4>
+                <p>chhayatranslogisticsvapi@gmail.com</p>
+            </div>
+            <div class="column">
+                <h4>Office</h4>
+                <p>Vapi</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+<!-- header ends  -->
+
+    <header style="height: 200px;">
+        <div class="header-overlay">
+            <h1>Our Branches</h1>
+            <p>Find contact details for all our branches below.</p>
+        </div>
+    </header>
+    
+
+    <section class="branch-section">
+        <h2>Branch Contact Details</h2>
+        <div class="branch-container">
+            <!-- Branch Cards -->
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Vapi Branch</h3>
+                <p><i class="fas fa-envelope"></i> chhayatranslogisticsvapi@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91-8726267200</p>
+                <div class="details">
+                    <p>Gala No. 10, Rashmi Compound, Nr. Sardar Chowk, GIDC, Vapi, Gujarat</p>
+                </div>
+            </div>
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Baddi Branch</h3>
+                <p><i class="fas fa-envelope"></i> baddi@chhayalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +91-7572597202</p>
+                <div class="details">
+                    <p>Plot No. 45, Diamond Park, Ring Road, Surat, Gujarat</p>
+                </div>
+            </div>
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Ahmedabad Branch</h3>
+                <p><i class="fas fa-envelope"></i> ahmedabad@chhayalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +91-9519881250</p>
+                <div class="details">
+                    <p>Plot No. 45, Diamond Park, Ring Road, Surat, Gujarat</p>
+                </div>
+            </div>
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Baroda Branch</h3>
+                <p><i class="fas fa-envelope"></i> baroda@chhayalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +91-7383961919</p>
+                <div class="details">
+                    <p>Plot No. 45, Diamond Park, Ring Road, Surat, Gujarat</p>
+                </div>
+            </div>
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Haridwar Branch</h3>
+                <p><i class="fas fa-envelope"></i> haridwar@chhayalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +91-9724427470</p>
+                <div class="details">
+                    <p>Plot No. 45, Diamond Park, Ring Road, Surat, Gujarat</p>
+                </div>
+            </div>
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Bhiwandi Branch</h3>
+                <p><i class="fas fa-envelope"></i> bhiwandi@chhayalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +91-8287760932</p>
+                <div class="details">
+                    <p>Plot No. 45, Diamond Park, Ring Road, Surat, Gujarat</p>
+                </div>
+            </div>
+            <div class="branch-item" onclick="toggleDetails(this)">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Hydrabad Branch</h3>
+                <p><i class="fas fa-envelope"></i> hydrabad@chhayalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +91-8726267200</p>
+                <div class="details">
+                    <p>Plot No. 45, Diamond Park, Ring Road, Surat, Gujarat</p>
+                </div>
+            </div>
+            <!-- Additional Branches (Ahmedabad, Vadodara, Rajkot, Gandhidham, Bhavnagar) -->
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Head Office: </h3>
+                <p> J-202, Arihant Garden, Near Chanod, Vapi, Valsad, Gujarat 396195</p>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:chhayatranslogisticsvapi@gmail.com">chhayatranslogisticsvapi@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919724233208">+91-9724233208</a></p>
+                <p>Address: Gala No. 10, Rashmi Compound, Nr. Sardar Chowk, 2nd Phase, GIDC, Vapi, Gujarat, India</p>
+            </div>
+    
+            <div class="footer-column social-icons">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Transport Co. | Designed with <span class="heart">❤️</span> for the future.</p>
+        </div>
+    </footer>
+    
+    <div class="scroll-top" id="scroll-top">Top</div>
+    
+</body>
+<script src="script.js"></script>
+</html>

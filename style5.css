@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #00172d, #004e92);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+/* Branch Section */
+.branch-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #001f3f, #004080);
+}
+
+.branch-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.branch-item {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.branch-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(145deg, rgba(0, 255, 200, 0.2), rgba(255, 255, 255, 0.1));
+}
+
+.branch-item i {
+    font-size: 1.2rem; /* Match icon size to text */
+    margin-right: 5px;
+    color: #00ffcc;
+}
+
+.branch-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.branch-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.branch-item .details {
+    display: none;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #00ffcc;
+}
