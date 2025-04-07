@@ -30,6 +30,23 @@ function startSlideshow() {
 // Start the slideshow
 document.addEventListener('DOMContentLoaded', startSlideshow);
 
+// tranportation section of index 
+document.addEventListener("DOMContentLoaded", () => {
+    const headingImage = document.querySelector(".heading-container img");
+
+    function adjustHeadingImageSize() {
+        if (window.innerWidth <= 768) {
+            headingImage.style.width = "80px";
+        } else {
+            headingImage.style.width = "150px";
+        }
+    }
+
+    window.addEventListener("resize", adjustHeadingImageSize);
+    adjustHeadingImageSize(); // Initial adjustment on load
+});
+
+
 
 // about section 
 // Scroll-to-Top Button
@@ -49,11 +66,14 @@ scrollTopButton.addEventListener('click', () => {
 // services map 
 
 
-/**
-         * Redirects user to Google Maps for the specified destination coordinates.
-         * @param {string} destination - The latitude and longitude of the office location (e.g., "21.2032,72.8243").
-         */
 function redirectToGoogleMaps(destination) {
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${destination}&travelmode=driving`;
     window.open(googleMapsUrl, '_blank'); // Open in a new tab
+}
+
+
+// Toggle Additional Details
+function toggleDetails(card) {
+    const details = card.querySelector('.details');
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
 }
